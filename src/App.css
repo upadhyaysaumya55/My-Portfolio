@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-padding-top: 80px; /* For sticky navbar spacing */
+}
+
+
+/* Theme Colors */
+body[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --section-bg: #f4f4f4;
+  --accent-color: #007bff;
+  --footer-bg: #eeeeee;
+}
+
+body[data-theme="dark"] {
+  --bg-color: #0f0f0f;
+  --text-color: #f5f5f5;
+  --section-bg: #1a1a1a;
+  --accent-color: #00bcd4;
+  --footer-bg: #111111;
+}
+
+/* Responsive Section Padding */
+section {
+  padding: 60px 20px;
+  background-color: var(--section-bg);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.2s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  text-decoration: underline;
+}
+
+/* Transition for smoother theme toggle */
+html, body {
+  transition: all 0.3s ease-in-out;
 }
