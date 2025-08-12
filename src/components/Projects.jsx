@@ -19,7 +19,6 @@ const Projects = () => {
       desc: 'A full-stack web app for managing cruise bookings, orders, and admin roles.',
       image: cruiseImg,
       aos: 'fade-right',
-      // No links provided here, so no links will show
     },
     {
       title: 'Interactive Resume',
@@ -42,7 +41,6 @@ const Projects = () => {
       desc: 'A minimal portfolio built using React-Bootstrap and styled-components.',
       image: portfolioImg,
       aos: 'fade-right',
-      // No links provided here, so no links will show
     },
   ];
 
