@@ -36,11 +36,12 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full px-4 py-20 bg-gradient-to-tr from-[#fdfbfb] to-[#ebedee] dark:from-[#1f2937] dark:to-[#111827]"
+      // Permanent dark background
+      className="w-full px-4 py-20 bg-gradient-to-tr from-gray-900 to-gray-800 text-white"
     >
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          className="text-4xl sm:text-5xl font-extrabold text-center mb-12 text-gray-800 dark:text-white"
+          className="text-4xl sm:text-5xl font-extrabold text-center mb-12"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -50,7 +51,7 @@ const Contact = () => {
 
         <motion.form
           onSubmit={handleSubmit}
-          className="bg-white dark:bg-gray-800 bg-opacity-60 backdrop-blur-lg p-8 rounded-3xl shadow-2xl space-y-6 border border-gray-200 dark:border-gray-700"
+          className="bg-gray-800 bg-opacity-80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl space-y-6 border border-gray-700"
           data-aos="fade-up"
         >
           <div className="flex flex-col gap-6">
@@ -61,7 +62,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-all bg-white dark:bg-gray-900 text-gray-800 dark:text-white"
+              className="w-full px-4 py-3 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all bg-gray-900 text-white"
             />
             <input
               type="email"
@@ -70,7 +71,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-all bg-white dark:bg-gray-900 text-gray-800 dark:text-white"
+              className="w-full px-4 py-3 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all bg-gray-900 text-white"
             />
             <textarea
               name="message"
@@ -79,7 +80,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition-all bg-white dark:bg-gray-900 text-gray-800 dark:text-white resize-none"
+              className="w-full px-4 py-3 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all bg-gray-900 text-white resize-none"
             ></textarea>
           </div>
 
@@ -96,7 +97,7 @@ const Contact = () => {
 
           {success && (
             <motion.p
-              className="text-green-600 font-semibold mt-4 text-center"
+              className="text-green-400 font-semibold mt-4 text-center"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
             >

@@ -4,7 +4,6 @@ import 'aos/dist/aos.css';
 import profileImage from '../assets/profile.png';
 import resumePDF from '../assets/Resume.pdf';
 
-
 const About = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -13,11 +12,12 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gradient-to-br from-blue-50 via-purple-100 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-4 md:px-8 transition-colors duration-300"
+      // Permanent dark gradient background, no theme-based switching
+      className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20 px-4 md:px-8 transition-colors duration-300 text-white"
     >
       <div className="max-w-6xl mx-auto">
         <h2
-          className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800 dark:text-white"
+          className="text-3xl md:text-4xl font-bold text-center mb-16"
           data-aos="fade-up"
         >
           About Me
@@ -40,17 +40,17 @@ const About = () => {
           </div>
 
           {/* Text Content */}
-          <div className="w-full lg:w-1/2 space-y-6 text-gray-700 dark:text-gray-300">
+          <div className="w-full lg:w-1/2 space-y-6 text-gray-300">
             <p data-aos="fade-up" data-aos-delay="100">
               Hi! I'm a{' '}
-              <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+              <span className="font-semibold text-indigo-400">
                 Full Stack Software Developer
               </span>{' '}
               (MERN Stack) who loves turning ideas into interactive digital experiences.
             </p>
             <p data-aos="fade-up" data-aos-delay="200">
               I specialize in{' '}
-              <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+              <span className="font-semibold text-indigo-400">
                 React, Node.js, Express, MongoDB
               </span>{' '}
               and modern tools to build fast, scalable applications.
@@ -70,7 +70,7 @@ const About = () => {
                 href={resumePDF}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-6 py-3 border border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-500 rounded-lg transition duration-300"
+                className="inline-block px-6 py-3 border border-indigo-400 text-indigo-400 hover:bg-indigo-500 hover:text-white rounded-lg transition duration-300"
               >
                 View Resume
               </a>
@@ -84,24 +84,24 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="600"
         >
-          <h3 className="text-2xl font-bold mb-10 text-center text-indigo-600 dark:text-indigo-400">
+          <h3 className="text-2xl font-bold mb-10 text-center text-indigo-400">
             My Journey
           </h3>
-          <div className="relative pl-6 border-l-4 border-gradient-to-b from-indigo-400 to-purple-500 dark:from-indigo-500 dark:to-purple-600">
+          <div className="relative pl-6 border-l-4 border-gradient-to-b from-indigo-400 to-purple-500">
             <div className="space-y-10 ml-2">
               <div data-aos="fade-right" data-aos-delay="100">
-                <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                <h4 className="text-xl font-semibold text-white">
                   April, 2025 – Present
                 </h4>
-                <p className="text-gray-600 dark:text-gray-300">Full Stack Developer Intern at Unified Mentor</p>
+                <p className="text-gray-300">Full Stack Developer Intern at Unified Mentor</p>
               </div>
               <div data-aos="fade-right" data-aos-delay="200">
-                <h4 className="text-xl font-semibold text-gray-800 dark:text-white">2022 – 2025</h4>
-                <p className="text-gray-600 dark:text-gray-300">BCA, Aryabhatta Knowledge University</p>
+                <h4 className="text-xl font-semibold text-white">2022 – 2025</h4>
+                <p className="text-gray-300">BCA, Aryabhatta Knowledge University</p>
               </div>
               <div data-aos="fade-right" data-aos-delay="300">
-                <h4 className="text-xl font-semibold text-gray-800 dark:text-white">2020 – 2022</h4>
-                <p className="text-gray-600 dark:text-gray-300">Higher Secondary Schooling – BSEB Board</p>
+                <h4 className="text-xl font-semibold text-white">2020 – 2022</h4>
+                <p className="text-gray-300">Higher Secondary Schooling – BSEB Board</p>
               </div>
             </div>
           </div>
