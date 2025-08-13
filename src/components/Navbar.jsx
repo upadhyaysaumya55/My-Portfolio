@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import resumePDF from '../assets/Resume.pdf';  // adjust the relative path as needed
+import resumePDF from '../assets/Resume.pdf'; 
 
 import { motion } from 'framer-motion';
 

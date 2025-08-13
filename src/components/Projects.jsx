@@ -41,6 +41,8 @@ const Projects = () => {
       desc: 'A minimal portfolio built using React-Bootstrap and styled-components.',
       image: portfolioImg,
       aos: 'fade-right',
+      liveDemo: 'https://my-portfolio-ifbr-taupe.vercel.app/',
+      sourceCode: 'https://github.com/upadhyaysaumya55/My-Portfolio.git',
     },
   ];
 
