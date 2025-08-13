@@ -12,6 +12,7 @@
     "@types/react-dom": "^19.1.6",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.6",
     "lottie-react": "^2.4.1",
     "react": "^19.1.0",
@@ -24,13 +25,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "postinstall": "npm install --legacy-peer-deps"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "npm install --legacy-peer-deps"
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",

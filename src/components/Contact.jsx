@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,21 +23,37 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setSuccess(true);
-    setTimeout(() => setSuccess(false), 3000);
-    setFormData({ name: "", email: "", message: "" });
+  e.preventDefault();
+
+  const SERVICE_ID = "service_92nmtqk";
+  const TEMPLATE_ID = "template_jjgkr79";
+  const PUBLIC_KEY = "dXcUuj_oHJoLr6CM9";
+
+  // Ensure variables match your EmailJS template exactly
+  const templateParams = {
+    name: formData.name,
+    email: formData.email,
+    message: formData.message
   };
 
-  const handleWhatsApp = () => {
-    const url = `https://wa.me/+916205745284?text=Hello%20I%20would%20like%20to%20connect!`;
-    window.open(url, "_blank");
-  };
+  console.log("📤 Sending email with:", templateParams);
+
+  emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+    .then((response) => {
+      console.log("✅ EmailJS Response:", response);
+      setSuccess(true);
+      setFormData({ name: "", email: "", message: "" });
+      setTimeout(() => setSuccess(false), 3000);
+    })
+    .catch((error) => {
+      console.error("❌ EmailJS Error:", error);
+      alert("Failed to send message. Please check the console for details and try again later.");
+    });
+};
 
   return (
     <section
       id="contact"
-      // Permanent dark background
       className="w-full px-4 py-20 bg-gradient-to-tr from-gray-900 to-gray-800 text-white"
     >
       <div className="max-w-4xl mx-auto">
@@ -110,7 +127,10 @@ const Contact = () => {
       {/* WhatsApp Floating Button */}
       <motion.div
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl cursor-pointer animate-pulse hover:scale-110 transition-transform duration-300"
-        onClick={handleWhatsApp}
+        onClick={() => {
+          const url = `https://wa.me/+916205745284`;
+          window.open(url, "_blank");
+        }}
         title="Chat on WhatsApp"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}

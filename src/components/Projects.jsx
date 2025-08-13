@@ -22,7 +22,7 @@ const Projects = () => {
     },
     {
       title: 'Interactive Resume',
-      desc: 'An interactive resume site with downloadable PDF, sections, animations, and contact form.',
+      desc: 'An interactive resume website featuring a downloadable PDF, multiple sections, animations, and a functional contact form.',
       image: resumeImg,
       aos: 'fade-up',
       liveDemo: 'https://interactive-resume-navy.vercel.app/',
@@ -30,7 +30,7 @@ const Projects = () => {
     },
     {
       title: 'Recipe Book App',
-      desc: 'A MERN recipe app with login/signup, filtering, edit/delete, and user-specific recipes.',
+      desc: 'A React recipe app with login/signup, recipe filtering, and user-specific recipe management using localStorage.',
       image: recipeImg,
       aos: 'fade-left',
       liveDemo: 'https://recipe-book-gilt-two.vercel.app/',
@@ -38,7 +38,7 @@ const Projects = () => {
     },
     {
       title: 'Portfolio Site',
-      desc: 'A minimal portfolio built using React-Bootstrap and styled-components.',
+      desc: 'A minimal portfolio built using React-Tailwind and styled-components.',
       image: portfolioImg,
       aos: 'fade-right',
       liveDemo: 'https://my-portfolio-ifbr-taupe.vercel.app/',

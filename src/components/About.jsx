@@ -93,7 +93,7 @@ const About = () => {
                 <h4 className="text-xl font-semibold text-white">
                   April, 2025 – Present
                 </h4>
-                <p className="text-gray-300">Full Stack Developer Intern at Unified Mentor</p>
+                <p className="text-gray-300">Full Stack Developer Intern at Unified Mentor Pvt.Ltd</p>
               </div>
               <div data-aos="fade-right" data-aos-delay="200">
                 <h4 className="text-xl font-semibold text-white">2022 – 2025</h4>
