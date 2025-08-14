@@ -26,7 +26,7 @@ const Hero = () => {
             <img
               src={profileImg}
               alt="Saumya Kumari"
-              className="w-full h-full rounded-full object-cover border-4 border-white shadow-2xl group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full rounded-full object-cover border-2 border-white shadow-2xl group-hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
