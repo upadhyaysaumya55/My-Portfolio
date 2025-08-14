@@ -1,0 +1,35 @@
+# Ignore node_modules (Vercel installs fresh)
+node_modules
+
+# Ignore build output from local runs
+build
+dist
+
+# Ignore test files & configs
+*.test.*
+*.spec.*
+__tests__/
+coverage/
+
+# Ignore environment & local config
+.env
+.env.*.local
+.vscode/
+.idea/
+*.log
+
+# Ignore docs, markdown, and other non-production files
+*.md
+docs/
+README.md
+
+# Ignore design files
+*.psd
+*.ai
+*.sketch
+
+# Ignore media not used in production
+*.mp4
+*.mov
+*.avi
+*.zip
