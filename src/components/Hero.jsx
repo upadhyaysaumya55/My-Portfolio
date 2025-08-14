@@ -24,10 +24,11 @@ const Hero = () => {
           <div className="relative group w-52 h-52 sm:w-60 sm:h-60 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-500 to-pink-600 blur-xl opacity-70 group-hover:opacity-90 transition duration-500 animate-pulse z-[-1]" />
             <img
-              src={profileImg}
-              alt="Saumya Kumari"
-              className="w-full h-full rounded-full object-cover border-2 border-white shadow-2xl group-hover:scale-105 transition-transform duration-300"
+            src={profileImg}
+            alt="Saumya Kumari"
+            className="w-full h-full rounded-full object-cover object-center border-4 border-white shadow-2xl group-hover:scale-105 transition-transform duration-300"
             />
+
           </div>
         </div>
 
