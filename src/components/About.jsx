@@ -61,7 +61,7 @@ const About = () => {
             <p data-aos="fade-up" data-aos-delay="400">
               <strong>Education:</strong> BCA, Aryabhatta Knowledge University
               <br />
-              <strong>Hobbies:</strong> UI/UX Design, Digital Art, Coding Challenges, Tech Blogging
+              <strong>Hobbies:</strong> Solving coding challenges, exploring backend technologies, optimizing performance, and learning new programming concepts.
             </p>
 
             {/* Resume CTA */}
