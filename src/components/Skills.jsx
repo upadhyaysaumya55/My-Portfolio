@@ -4,22 +4,22 @@ import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "HTML5", level: 100 },
-  { name: "CSS3", level: 95 },
-  { name: "JavaScript", level: 90 },
-  { name: "React.js", level: 90 },
-  { name: "Express.js", level: 85 },
-  { name: "Node.js", level: 75 },
-  { name: "MongoDB", level: 70 },
-  { name: "SQL", level: 60 },
-  { name: "PostgreSQL", level: 85 },
-  { name: "Git & GitHub", level: 95 },
-  { name: "Docker", level: 70 },
-  { name: "Kubernetes", level: 70 },
-  { name: "CI/CD", level: 70 },
-  { name: "Cloud Computing", level: 75 },
-  { name: "REST APIs", level: 75 },
-  { name: "Microservices Architecture", level: 70 },
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "React.js",
+  "Express.js",
+  "Node.js",
+  "MongoDB",
+  "SQL",
+  "PostgreSQL",
+  "Git & GitHub",
+  "Docker",
+  "Kubernetes",
+  "CI/CD",
+  "Cloud Computing",
+  "REST APIs",
+  "Microservices Architecture",
 ];
 
 const Skills = () => {
@@ -53,17 +53,8 @@ const Skills = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-gray-800 rounded-xl p-5 shadow-lg border border-gray-700 transition-all duration-300 hover:shadow-pink-500/30"
               >
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold text-white">{skill.name}</span>
-                  <span className="text-sm text-pink-400 font-medium">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-gray-700 h-3 rounded-full overflow-hidden">
-                  <motion.div
-                    className="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${skill.level}%` }}
-                    transition={{ duration: 1.2, delay: index * 0.1 }}
-                  />
+                <div className="flex justify-center">
+                  <span className="font-semibold text-white">{skill}</span>
                 </div>
               </motion.div>
             );
