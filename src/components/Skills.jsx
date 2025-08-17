@@ -7,7 +7,7 @@ const skills = [
   "HTML5",
   "CSS3",
   "Tailwind CSS",
-  "JavaScript(ES6+",
+  "JavaScript(ES6+)",
   "React.js",
   "Express.js",
   "Node.js",
