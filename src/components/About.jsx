@@ -44,7 +44,7 @@ const About = () => {
             <p data-aos="fade-up" data-aos-delay="100">
               Hi! I'm a{' '}
               <span className="font-semibold text-indigo-400">
-                Full Stack Software Developer
+                Full Stack Web Developer
               </span>{' '}
               (MERN Stack) who loves turning ideas into interactive digital experiences.
             </p>

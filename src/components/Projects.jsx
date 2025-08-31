@@ -7,6 +7,8 @@ import cruiseImg from '../assets/cruise-ship.png';
 import resumeImg from '../assets/interactive-resume.png';
 import recipeImg from '../assets/recipe-book.png';
 import portfolioImg from '../assets/portfolio.png';
+import mapImg from '../assets/interactive-map.png';
+import weatherImg from '../assets/weather-app.png';
 
 const Projects = () => {
   useEffect(() => {
@@ -43,6 +45,22 @@ const Projects = () => {
       aos: 'fade-right',
       liveDemo: 'https://my-portfolio-ifbr-taupe.vercel.app/',
       sourceCode: 'https://github.com/upadhyaysaumya55/My-Portfolio.git',
+    },
+    {
+      title: 'Weather App',
+      desc: 'A responsive weather app that provides real-time forecasts with location-based search.',
+      image: weatherImg,
+      aos: 'fade-left',
+      liveDemo: 'https://sky-cast-weather-b7r7cln4v-upadhyaysaumya55s-projects.vercel.app/',
+      sourceCode: 'https://github.com/upadhyaysaumya55/SkyCast-Weather-App.git',
+    },
+    {
+      title: 'Interactive Map',
+      desc: 'An interactive web map with real-time location detection, search, and filtering features for a smooth user experience.',
+      image: mapImg,
+      aos: 'fade-left',
+      liveDemo: 'https://interactive-map-eight-roan.vercel.app/',
+      sourceCode: 'https://github.com/upadhyaysaumya55/Interactive-map.git',
     },
   ];
 
