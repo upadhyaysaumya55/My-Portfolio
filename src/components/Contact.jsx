@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -124,20 +123,7 @@ const Contact = () => {
         </motion.form>
       </div>
 
-      {/* WhatsApp Floating Button */}
-      <motion.div
-        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl cursor-pointer animate-pulse hover:scale-110 transition-transform duration-300"
-        onClick={() => {
-          const url = `https://wa.me/+916205745284`;
-          window.open(url, "_blank");
-        }}
-        title="Chat on WhatsApp"
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
-      >
-        <FaWhatsapp size={26} />
-      </motion.div>
+      
     </section>
   );
 };
