@@ -1,74 +1,55 @@
+My Portfolio
+------------
 
-# Getting Started with Create React App
+A personal portfolio website built using **React** and **Tailwind CSS**.  
+The project showcases my skills, projects, and experience with an interactive and responsive design.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+--------
+- About Me section highlighting skills and experience
+- Projects section with detailed descriptions and links
+- Contact form for visitors to reach out
+- Responsive and mobile-friendly design
+- Smooth animations and interactive UI components
 
-## Available Scripts
+Tech Stack
+----------
+- Frontend: React (Create React App)
+- Styling: Tailwind CSS
+- JavaScript (ES6+), HTML5, CSS3
 
-In the project directory, you can run:
+Getting Started
+---------------
+Prerequisites:
+- Node.js installed on your system
+- A modern web browser (Chrome, Edge, Firefox, etc.)
 
-### `npm start`
+Installation:
+1. Clone the repository:
+   git clone https://github.com/upadhyaysaumya55/my-portfolio.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Navigate to the project folder:
+   cd my-portfolio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Install dependencies:
+   npm install
 
-### `npm test`
+4. Start the development server:
+   npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Usage:
+- Open the URL shown in the console (usually http://localhost:3000)
+- Explore the portfolio sections and project details
 
-### `npm run build`
+Learnings
+---------
+- Advanced Frontend Development: Improved skills with React components and state management
+- Responsive Design: Built a layout that works on multiple screen sizes
+- Interactive UI: Implemented smooth animations and transitions using Tailwind CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# My-Portfolio
-8157b8d75d0fa121f80e885e74e10a66f508b3e5
+Contact
+-------
+Created by: Saumya Kumari  
+GitHub: https://github.com/upadhyaysaumya55  
+LinkedIn: https://www.linkedin.com/in/saumya-k-211917206/  
+Email: saumyaupadhyay621@gmail.com
