@@ -22,33 +22,36 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const SERVICE_ID = "service_92nmtqk";
-  const TEMPLATE_ID = "template_jjgkr79";
-  const PUBLIC_KEY = "dXcUuj_oHJoLr6CM9";
+    const SERVICE_ID = "service_92nmtqk";
+    const TEMPLATE_ID = "template_jjgkr79";
+    const PUBLIC_KEY = "dXcUuj_oHJoLr6CM9";
 
-  // Ensure variables match your EmailJS template exactly
-  const templateParams = {
-    name: formData.name,
-    email: formData.email,
-    message: formData.message
+    // ✅ Match EmailJS template variables
+    const templateParams = {
+      user_name: formData.name,
+      user_email: formData.email,
+      message: formData.message,
+    };
+
+    console.log("📤 Sending email with:", templateParams);
+
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+      .then((response) => {
+        console.log("✅ EmailJS Response:", response);
+        setSuccess(true);
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setSuccess(false), 3000);
+      })
+      .catch((error) => {
+        console.error("❌ EmailJS Error:", error);
+        alert(
+          "Failed to send message. Please check the console for details and try again later."
+        );
+      });
   };
-
-  console.log("📤 Sending email with:", templateParams);
-
-  emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
-    .then((response) => {
-      console.log("✅ EmailJS Response:", response);
-      setSuccess(true);
-      setFormData({ name: "", email: "", message: "" });
-      setTimeout(() => setSuccess(false), 3000);
-    })
-    .catch((error) => {
-      console.error("❌ EmailJS Error:", error);
-      alert("Failed to send message. Please check the console for details and try again later.");
-    });
-};
 
   return (
     <section
@@ -122,8 +125,6 @@ const Contact = () => {
           )}
         </motion.form>
       </div>
-
-      
     </section>
   );
 };
