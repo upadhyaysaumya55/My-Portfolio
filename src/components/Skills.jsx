@@ -4,6 +4,16 @@ import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 
 const skills = [
+  "AWS",
+  "Linux (Basic)",
+  "SQL (Basic)",
+  "PostgreSQL (Basic)",
+  "Git & GitHub",
+  "Docker",
+  "Kubernetes",
+  "CI/CD",
+  "Cloud Computing",
+  "REST APIs",
   "HTML5",
   "CSS3",
   "Tailwind CSS",
@@ -13,15 +23,8 @@ const skills = [
   "Node.js",
   "MongoDB",
   "Django",
-  "SQL",
-  "PostgreSQL",
-  "Git & GitHub",
-  "Docker",
-  "Kubernetes",
-  "CI/CD",
-  "Cloud Computing",
-  "REST APIs",
-  "Microservices Architecture",
+  "Microservices Architecture"
+
 ];
 
 const Skills = () => {
