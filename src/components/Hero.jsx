@@ -134,7 +134,7 @@ const Hero = () => {
           {/* Quick Stats */}
           <div className="flex flex-wrap justify-center md:justify-start gap-8 pt-6">
             <div>
-              <h3 className="text-2xl font-bold text-cyan-400">10+</h3>
+              <h3 className="text-2xl font-bold text-cyan-400">6+</h3>
               <p className="text-gray-400 text-sm">Projects Built</p>
             </div>
 
